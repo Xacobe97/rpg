@@ -1,4 +1,4 @@
 rpg
 ===
 
-RPG Game
+RPG Game written in Java by xacobe97
