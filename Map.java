@@ -7,19 +7,19 @@ int ii = 0;
 int i = 0;
 int valor = 0;
 Random r = new Random();
-int a, b, randa, randb, map;
+int randa, randb, map;
 int counta = 0;
 int countb = 0;
 String letter;
 
-public void setMapa(int ii, int i, String valor) {
+public void setMap(int ii, int i, String value) {
 
 	this.ii = ii;
 	this.i = i;
 	
 	ii--;
 	i--;
-	coordenadas[ii][i] = valor;
+	coordenadas[ii][i] = value;
 	
 	}
 
@@ -59,10 +59,10 @@ public void waterBiome() {
 	randa = r.nextInt( 10 - 1 + 1 );
 	randb = r.nextInt( 20 - 1 + 1 );
 	
-	for (a = 0; a < randa; a++) {
-		for (b = 0; b < randb; b++) {
-			coordenadas[a][b] = letter;
-			System.out.print(coordenadas[a][b]);
+	for (ii = 0; ii < randa; ii++) {
+		for (i = 0; i < randb; i++) {
+			coordenadas[ii][i] = letter;
+			System.out.print(coordenadas[ii][i]);
 			}
 		System.out.println("");
 		}
@@ -74,10 +74,10 @@ public void desertBiome() {
 	randa = r.nextInt( 5 - 1 + 1 );
 	randb = r.nextInt( 10 - 1 + 1 );
 	
-	for (a = 0; a < randa; a++) {
-		for (b = 0; b < randb; b++) {
-			coordenadas[a][b] = letter;
-			System.out.print(coordenadas[a][b]);
+	for (ii = 0; ii < randa; ii++) {
+		for (i = 0; i < randb; i++) {
+			coordenadas[ii][i] = letter;
+			System.out.print(coordenadas[ii][i]);
 			}
 		System.out.println("");
 		}
@@ -89,10 +89,10 @@ public void jungleBiome() {
 	randa = r.nextInt( 5 - 1 + 1 );
 	randb = r.nextInt( 10 - 1 + 1 );
 	
-	for (a = 0; a < randa; a++) {
-		for (b = 0; b < randb; b++) {
-			coordenadas[a][b] = letter;
-			System.out.print(coordenadas[a][b]);
+	for (ii = 0; ii < randa; ii++) {
+		for (i = 0; i < randb; i++) {
+			coordenadas[ii][i] = letter;
+			System.out.print(coordenadas[ii][i]);
 			}
 		System.out.println("");
 		}
@@ -100,9 +100,9 @@ public void jungleBiome() {
 
 public void printMap() {
 	
-	for (a = 0; a < 20; a++) {
-		for (b = 0; b < 20; b++) {
-			System.out.print(coordenadas[a][b]);
+	for (ii = 0; ii < 20; ii++) {
+		for (i = 0; i < 20; i++) {
+			System.out.print(coordenadas[ii][i]);
 			}
 		System.out.println("");
 		}
